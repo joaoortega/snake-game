@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main .game-board {
+    min-width: 512px;
+    min-height: 512px;
+    margin: 30px 10px;
+}
+
+main .game-rules {
+    width: 300px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+
+main h1 {
+    margin-top: 20px;
+}
+
+main h3 {
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+main .lastscore {
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+main .button {
+    margin: 10px;
+    padding: 12px;
+    background-color: rgb(38, 156, 38);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+@media (max-width: 850px) {
+    main .game-rules {
+        width: 96%;
+        margin: 10px;
+}
+
+@media (max-width: 400px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main .game-rules {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+    }
